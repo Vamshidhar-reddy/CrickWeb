@@ -1,0 +1,39 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+img {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 300px;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.article-section {
+    background-color: white;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+
+.label-text {
+    font-size:20px;
+    font-weight:bold;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

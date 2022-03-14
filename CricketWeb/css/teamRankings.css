@@ -1,0 +1,90 @@
+﻿body {
+}
+
+
+.rankingTable {
+    border-collapse: collapse;
+    width:100%;
+    
+}
+
+
+
+    .rankingTable td, .rankingTable tr, .rankingTable th {
+        border: 0.5px solid #dbdbdb;
+        padding: 6px 2px 6px 2px;
+        
+    }
+
+
+    .rankingTable tr {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+
+    /*.reportTable tbody td:first-child {
+        font-weight: bold;
+        text-align: left;
+        width:10%
+    }*/
+
+    .rankingTable thead tr:nth-child(1) {
+        background-color: #31bc86;
+        font-weight: bold;
+        color: white;
+    }
+
+  
+    
+
+    .rankingTable tr:nth-child(2n+1) {
+        background-color: #e3fffb;
+    }
+
+    .rankingTable tr:hover {
+        background-color: #a2e4db;
+    }
+
+
+    
+  
+    .tableType {
+    border-collapse: collapse;
+    width:100%;
+    
+}
+
+
+
+    .tableType td, .rankingTable tr, .rankingTable th {
+        border: 0.5px solid #dbdbdb;
+        padding: 6px 2px 6px 2px;
+        
+    }
+
+
+    .tableType tr {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+    .tableType thead tr:nth-child(1) {
+        background-color: #54dda8;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .tableType thead tr td a{
+        text-decoration:none;
+        color:white;
+    }
+
+    .tableType thead tr td.td-active{
+        background-color:#10a76c;
+        color:black;
+    }

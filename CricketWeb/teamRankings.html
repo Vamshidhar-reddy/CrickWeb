@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/teamRankings.css" rel="stylesheet" />
+    
+    <script src="js/teamRanking.js"></script>
+</head>
+<body>
+    <div class="header-logo">
+        <div class="heading">
+            <span class="heading-first">Cric</span><span class="heading-second">Web</span>
+            <br />
+            <span class="sub-heading-text">A website for all cricket fans</span>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="active"><a href="teamRankings.html">TEAM RANKING</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br />
+    <div class="section">
+        <div class="rankingTables">
+            <table class="tableType">
+                <thead>
+                    <tr>
+                        <td id="testId" class="td-active">
+                            <a href="#">
+                                <div id="testClickDiv" onclick="hideAndShowRanking(this.id)" style="height:100%;width:100%;">
+                                    Test
+                                </div>
+                            </a>
+                        </td>
+                        <td id="odiId">
+                            <a href="#">
+                                <div id="odiClickDiv" onclick="hideAndShowRanking(this.id)" style="height:100%;width:100%;">
+                                    ODI
+                                </div>
+                            </a>
+                        </td>
+                        <td id="t20Id">
+                            <a href="#">
+                                <div id="t20ClickDiv" onclick="hideAndShowRanking(this.id)" style="height:100%;width:100%;">
+                                    T20
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <br />
+        <div id="testdiv">
+            <table class="rankingTable">
+                <thead>
+                    <tr>
+                        <td>Ranking</td>
+                        <td>Team</td>
+                        <td>Rating</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>INDIA</td>
+                        <td>116</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SOUTH AFRICA</td>
+                        <td>106</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>AUSTRALIA</td>
+                        <td>106</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>ENGLAND</td>
+                        <td>105</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>NEW ZEALAND</td>
+                        <td>102</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>SRI LANKA</td>
+                        <td>97</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>PAKISTAN</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>WEST INDIES</td>
+                        <td>76</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>BANGLADESH</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>ZIMBABWE</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="odidiv" style="display:none">
+            <table class="rankingTable">
+                <thead>
+                    <tr>
+                        <td>Ranking</td>
+                        <td>Team</td>
+                        <td>Rating</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>ENGLAND</td>
+                        <td>127</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>INDIA</td>
+                        <td>122</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>NEW ZEALAND</td>
+                        <td>112</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>SOUTH AFRICA</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>PAKISTAN</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>AUSTRALIA</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>BANGLADESH</td>
+                        <td>92</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>SRI LANKA</td>
+                        <td>77</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>WEST INDIES</td>
+                        <td>69</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>AFGHANISTAN</td>
+                        <td>67</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="t20div" style="display:none">
+            <table class="rankingTable">
+                <thead>
+                    <tr>
+                        <td>Ranking</td>
+                        <td>Team</td>
+                        <td>Rating</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>PAKISTAN</td>
+                        <td>132</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>INDIA</td>
+                        <td>124</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>AUSTRALIA</td>
+                        <td>122</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>ENGLAND</td>
+                        <td>117</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>NEW ZEALAND</td>
+                        <td>116</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>SOUTH AFRICA</td>
+                        <td>111</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>WEST INDIES</td>
+                        <td>106</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>AFGHANISTAN</td>
+                        <td>92</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>SRI LANKA</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>BANGLADESH</td>
+                        <td>77</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="footer">
+        <div class="footer-info">
+            <span> © 2022 CricketWeb, All rights reserved | </span>
+            <br />
+            <span>All the articles, links, match information and team rankings are taken from Cricbuzz.com & CricInfo.com</span>
+        </div>
+    </div>
+</body>
+
+</html>
